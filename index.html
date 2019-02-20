@@ -23,7 +23,7 @@
       <input id="guest" type="text" value="">
     </p>
 
-    <button id="clicker" class="btn btn-primary">Click me!</button>
+   <button id="clicker" class="btn btn-primary">Click me!</button>
 
     <p id="result"></p>
 
@@ -43,10 +43,6 @@
 
     document.getElementById('clicker').addEventListener('click', function () {
       const s = document.getElementById('guest').value
-      const i = parseInt(document.getElementById('firstNumber').value)
-      console.log('i=' + i)
-      const j = parseInt(document.getElementById('secondNumber').value)
-      console.log('j=' + j)
       const ans = s + ', the length is ' + s.length + '.'
       document.getElementById('result').innerHTML = ans
     })
